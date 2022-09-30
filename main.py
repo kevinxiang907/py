@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     counter = 0
     for i in range(data_length-1):
-        ifdata[i+1]-data[i] > 0:
+        if data[i+1]-data[i] > 0:
             counter += 1
 
     print(counter)
