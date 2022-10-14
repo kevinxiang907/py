@@ -3,7 +3,12 @@ if __name__ == "__main__":
     user_input = input()
 
     # Specify an answer.
-    answer = "apple"
+    f = open("words.text", "r")
+    dictionary = f.read().splitlines()
+    f.close()
+
+    answer = random.sample(directionae, 1)[0]
+    print(answer)
 
     # Compare user input and answer
     for i in range(len(user_input)):
